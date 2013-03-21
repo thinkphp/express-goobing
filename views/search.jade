@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+   #bing.yui-u.first
+      h2 Bing
+         items = bing
+      ul#ul
+      each item, i in items
+         li
+           h3
+            a(href=item.Url) #{item.Title}
+           p #{item.Description}
+
+   #google.yui-u
+      h2 Google
+         items = google
+      ul#ul
+      each item, i in items
+         li
+           h3
+            a(href=item.url) #{item.titleNoFormatting}
+           p !{item.content}
+

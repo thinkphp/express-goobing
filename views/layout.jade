@@ -1,0 +1,31 @@
+!!! 5
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title GooBing: #{title} - Search Google and Bind in one Go!
+    link(rel='stylesheet', href='http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css', type='text/css')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/2.7.0/build/base/base.css', type='text/css')
+    link(rel='stylesheet', href='stylesheets/style.css', type='text/css')
+  body
+    #doc2.yui-t7
+      #hd(role='banner')
+        h1 GooBing
+      #bd(role='main')
+        form#mainform(action='/search', method='post')
+          div
+            label(for='q') Search:
+            input#search(type='text', name='q', value='MooTools')
+            input(type='submit', value='Go!')
+        p.info GooBing allows you to search Google and Bing in one go
+        .yui-gb
+
+             block content
+
+      #ft(role='contentinfo')
+        p
+          | Created by @
+          a(href='http://twitter.com/thinkphp') thinkphp 
+          | using 
+          a(href='http://developer.yahoo.com/yui/grids/') YUI  
+          | and 
+          a(href='http://expressjs.com/') Express 
