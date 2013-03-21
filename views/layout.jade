@@ -14,7 +14,7 @@ html
         form#mainform(action='/search', method='post')
           div
             label(for='q') Search:
-            input#search(type='text', name='q', value='MooTools')
+            input#search(type='text', name='q', value='#{title}')
             input(type='submit', value='Go!')
         p.info GooBing allows you to search Google and Bing in one go
         .yui-gb
@@ -24,8 +24,10 @@ html
       #ft(role='contentinfo')
         p
           | Created by @
-          a(href='http://twitter.com/thinkphp') thinkphp 
+          a(href='http://thinkphp.ro') Adrian Statescu 
           | using 
           a(href='http://developer.yahoo.com/yui/grids/') YUI  
           | and 
           a(href='http://expressjs.com/') Express 
+          | download on 
+          a(href='https://github.com/thinkphp/express-goobing') GitHub 
